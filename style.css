@@ -50,9 +50,9 @@ html {
     color: #222;
     height: 100vh;
     width: 100vw;
-    display: flex;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+    border: solid;
 }
 
 input {
@@ -67,50 +67,71 @@ input {
 #magnify {
     grid-area: magnify;
     display: flex;
-    padding-top: 0;
+    padding-left: 2px;
+    border: none;
+    justify-self: flex-end;
+    visibility: hidden; /*for now*/
 }
 
 #field {
     grid-area: field;
     display: flex;
     max-height: 10px;
+    max-width: 700px;
+    width: 70%;
+    border: none;
+    justify-self: flex-start;
 }   
 
 #mic {
     grid-area: mic;
     display: flex;
     padding-top: 0;
+    border: none;
+    justify-self: flex-end;
 }
 
 .search-field-outline {
     border: 1px solid #dfe1e5;
     width: 80%;
     border-radius: 24px;
-    padding: 5px 8px 5px 16px;
+    padding: 5px 8px 5px 6px;
     padding-left: 14px;
-    width: 460;
-    height: 44px;
-    z-index: 3;
+    width: 50%;
+    height: auto;
     display: grid; 
-    grid: auto 55px auto;
+    grid: 700px 1fr 1fr; 
     grid-template-areas: "field magnify mic";
-    justify-content: space-between;
-    justify-items: space-between;
     align-items: center;
-    align-content: center;
+    margin-top: 60px;
+    max-width: 650px;
 
 }
 
 #navbar {
-    display: block;
+    display: inline;
     width: 100%;
     align-items: center;
 }
 
 #google-link {
     display: inline;
+    float: left;
+    padding-left: 40px;
+    padding-right: 20px;
+  
+
 }
 
 .navlink {
     display: inline;
+    float: right;
+    padding-right: 30px;
+    top: 0;
+}
+
+#subheader {
+    padding: 40px;
+    text-align: center;
+
 }
