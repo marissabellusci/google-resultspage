@@ -1,0 +1,116 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET END*/
+
+html {
+    font-size: small;
+    background: #fff;
+    color: #222;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+}
+
+#magnify {
+    grid-area: magnify;
+    display: flex;
+    padding-top: 0;
+}
+
+#field {
+    grid-area: field;
+    display: flex;
+    max-height: 10px;
+}   
+
+#mic {
+    grid-area: mic;
+    display: flex;
+    padding-top: 0;
+}
+
+.search-field-outline {
+    border: 1px solid #dfe1e5;
+    width: 80%;
+    border-radius: 24px;
+    padding: 5px 8px 5px 16px;
+    padding-left: 14px;
+    width: 460;
+    height: 44px;
+    z-index: 3;
+    display: grid; 
+    grid: auto 55px auto;
+    grid-template-areas: "field magnify mic";
+    justify-content: space-between;
+    justify-items: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+
+#navbar {
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+
+#google-link {
+    display: inline;
+}
+
+.navlink {
+    display: inline;
+}
